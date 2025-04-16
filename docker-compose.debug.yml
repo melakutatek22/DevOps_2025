@@ -1,0 +1,6 @@
+services:
+  devops2025:
+    image: devops2025
+    build:
+      context: .
+      dockerfile: ./Dockerfile
