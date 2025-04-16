@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v4
     - name: Build the HTML site in the jekyll/builder container
       run: |
         docker run \
@@ -23,6 +23,6 @@ jobs:
         image: melaku8080/html-image-build
         registry: docker.io
         dockerfile: Dockerfile
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.melaku8080 }}
+        password: ${{ secrets.@Dockerhub.01 }}
    
